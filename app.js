@@ -10,6 +10,11 @@ function sortear() {
         return;
     };
 
+    if (quantidade > (numeroFinal - numeroInicial)) {
+        alert("A quantidade de números sorteados não pode ser maior que a quantidade de numeros !");
+        return;
+    };
+
     for (let i = 0; i < quantidade; i++) {
         numero = obterNumeroAleatorio(numeroInicial, numeroFinal);
         while (numerosSorteados.includes(numero)) {
