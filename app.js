@@ -5,6 +5,11 @@ function sortear() {
     let numerosSorteados = [];
     let numero;
 
+    if (numeroInicial >= numeroFinal) {
+        alert("O campo 'Do número' deverá ser menor que o campo 'Até o número' !!!" );
+        return;
+    };
+
     for (let i = 0; i < quantidade; i++) {
         numero = obterNumeroAleatorio(numeroInicial, numeroFinal);
         while (numerosSorteados.includes(numero)) {
