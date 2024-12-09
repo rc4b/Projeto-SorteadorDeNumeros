@@ -11,7 +11,7 @@ function sortear() {
     };
 
     if (quantidade > (numeroFinal - numeroInicial)) {
-        alert("A quantidade de números sorteados não pode ser maior que a quantidade de numeros !");
+        alert("A quantidade de números sorteados não pode ser maior que a quantidade de numeros totais !");
         return;
     };
 
